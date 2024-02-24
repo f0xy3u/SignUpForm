@@ -26,7 +26,6 @@ body {
 .logo {
     display: flex;
     position: relative;
-    color: white;
     font-family: "Protest Revolution", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 80px;
     justify-content: center;
@@ -34,12 +33,20 @@ body {
     height: max-content;
     top: 150px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.253);
-    gap: 10px;
+    background-color: #8b8b8b41;
 }
 
-.logo>img {
+.logo>a>img {
     height: 120px;
+}
+
+.logo>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
 }
 
 .resource {
@@ -101,6 +108,10 @@ input {
     text-align: center;
 }
 
+input:focus {
+    border-color: rgb(45, 118, 201);
+}
+
 .pswrdMatch {
     font-size: 12px;
     color: rgb(235, 0, 0);
@@ -121,4 +132,30 @@ input {
 
 .underText>a:visited {
     color: rgb(61, 61, 61);
+}
+
+.logIn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 5%;
+    gap: 3px;
+}
+
+.logIn>div {
+    font-size: 15px;
+}
+
+.submit {
+    width: 150px;
+    height: 40px;
+    color: #F0F4F5;
+    background-color: rgb(47, 29, 146);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.submit:hover {
+    background-color: rgb(40, 26, 121);
 }
